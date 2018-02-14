@@ -58,14 +58,39 @@
  
                 </div>
                               
+                 <div class="row" ng-show="mostrarCaja">
+                    
+                    <!-- Div que contiene la imagen del profesor -->
+                    <div class="col-sm-5">
+                        <section class="panel">
+                            <div class="panel-body" align="center">
+                                Nombre:
+                               <input type="text" class="form-control" ng-model="editando.nombre">
 
+                                 Edad:
+                               <input type="text" class="form-control" ng-model="editando.edad">
+                                Bio:
+                               <textarea type="text" class="form-control" ng-model="editando.bio" rows="5"></textarea>
+                                
+                            </div>
+                        </section>
+                    </div>
 
-
-
-
+                   
+                    
+ 
+                </div>
+                    
+                  <div class="row" ng-show="mostrarCaja">
+                     <div class="col-sm-2">
+                                 <button class="btn btn-primary" ng-click="Guardar()">Guardar</button>
+                                <button class="btn btn-danger" ng-click="Cancelar()">cancelar</button>  
+                    </div> 
+                </div>   
+                  
                
                     
-                      <div class="col-sm-8">
+                    <!--  <div class="col-sm-8">
                         <section class="panel">
                             <div class="panel-body">
                                
@@ -82,7 +107,7 @@
                                 <button class="btn btn-danger" ng-click="Cancelar()">cancelar</button>  
                             </div>     
                         </section>   
-                      </div>
+                      </div>  -->
   
                  
                             
