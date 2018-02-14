@@ -26,7 +26,7 @@ app.controller('listadoCtrl', ['$scope', function($scope){
       { id:"EST", nombre:"ESTONIA"}
   ];
 
-  $scope.paisSeleccionado = "DOM";
+   $scope.paisSeleccionado = "DOM";
 
 
 

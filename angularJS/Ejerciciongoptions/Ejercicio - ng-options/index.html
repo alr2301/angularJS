@@ -26,9 +26,18 @@
             <hr>
 
             
+            Seleccione el pais:  {{paisSeleccionado}}
+            <select ng-model="paisSeleccionado" class="form-control">
+                <option value="">Seleccione</option>
+                <option ng-repeat="pais in paises" value="{{pais.id}}">{{pais.nombre}}</option>
+            </select>
+            <br>
 
-
-
+            <select ng-model="paisSeleccionado" class="form-control" ng-options="pais.id as pais.nombre for pais in paises">
+                
+               <option value="">Seleccione</option>
+            </select>
+            
         </div><!-- fin del listadoCtrl -->
 
     </body>
