@@ -1,0 +1,130 @@
+body{
+	background: #DBDFE1;
+}
+header{
+	
+	height: 150px;
+	border:1px solid black;
+	position: relative;
+	margin:5px;
+	background:#A6A2A2;
+	
+
+}
+
+.fg{
+	position: relative;
+}
+nav{
+	border:1px solid black; 
+	
+	position: relative;
+	width: 400px;
+	
+}
+.icono{
+	left: 150px;
+}
+.No_visible{
+	visibility: hidden;
+}
+nav>ul>li{
+	display: inline-block;
+
+}
+aside{
+	border:1px solid black;
+	
+	height: 100px;
+	width: 24%;
+	margin: 5px;
+	height: 600px;
+
+
+}
+.cuadrado_abajo{
+	height: 100px;
+	width: 12%;
+	margin:  5px 5%;
+	background: orange;
+	position: relative;
+	display: inline-block;
+
+}
+.cuadrado{
+	background: orange;
+	height: 100px;
+	width: 12%;
+	margin:  5px 5%;
+	display: inline-block;
+}
+.parrafoaside{
+	margin: 10%;
+	vertical-align: bottom;
+}
+#peca{
+	float: right;
+}
+section{
+	border:1px solid black;
+	
+	width: 74.5%;
+	margin: 5px;
+	height: 600px;
+	top: -605px;
+	left: 25%;
+	position: relative;
+
+
+
+}
+footer{
+	
+	border:1px solid black;
+	height: 163px;
+	top: -600px;
+	position: relative;
+	margin: 5px;
+	visibility: hidden;
+	
+}
+.centrada{
+	left: 45%;
+	top: 45%;
+	position: relative;
+}
+#copy{
+	top: 65%;
+	position: relative;
+}
+.centro{
+	/*vertical-align: middle;*/
+	left: 50%;
+
+	position: relative;
+}
+/*aside>div{
+	vertical-align: bottom;
+	margin: 1px;
+}
+
+
+div.reservadas{
+	
+	background:  lime;
+}
+div.rgb{
+	background: rgb(256,90,0);
+}
+div.por{
+	background: rgb(25%,3%,30%);
+}
+div.transparencia{
+	background: rgba(0%,0%,0%,0.5);
+}
+
+p{
+	border: 1px solid black;
+	background: green;
+	display: inline;
+}*/

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="normalize.css">
+	
+		<link rel="stylesheet" href="estilos.css">
+		<!-- Incluir Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		
+		<!-- Incluir AngularJS -->
+		<script src="js/lib/angular.min.js"></script>
+
+    </head>    
+    <body>
+
+			<header>  			
+    			<h1>{{ "Hola Mundo desde AngularJS" }}</h1>
+    		</header>
+	    	<div class="container">
+	    		
+	    		<hr>
+				<h2>Filtros de texto : FernAnDo</h2>
+					<h3> uppercase {{"FernAnDo" | uppercase }}</h3>
+					<h3> uppercase {{"FernAnDo" | lowercase }}</h3>
+				<br>	<hr>
+				<h2>Filtros de moneda: 11345.6</h2>	
+					<h3> currency {{ 11345.6 | currency:'EUR' }}</h3>
+				<br>	<hr>
+				<h2>Filtros de numero : 1232512151.5</h2>	
+					<h3> number {{ 1232512151.5 | number }}</h3>
+	    	</div>
+	    	<div class="container">
+	    	<p>
+				<hr>
+	    		<h2>NG-MODEL</h2>
+	    		<p>
+	    		Su nombre:  {{nombre | uppercase}}
+	    		<br>
+	    		<input type="text"  ng-model="nombre"class="form-control" placeholder="Ingrese su nombre"></input>
+				<p>
+					Seleccione un pais: {{pais}}
+					<select class="form-control" ng-model="pais">
+						<option value="España">España</option>
+						<option value="Cuba">Cuba</option>
+						<option value="Irlanda">Irlanda</option>
+					</select>
+				</p>
+
+				<p>
+					Seleccione una opcion: {{country1}} {{country2 }} {{country3}} 
+					<br>
+					<input type="checkbox" ng-model="country1"value="España">España</input>
+					<input type="checkbox" ng-model="country2"value="Cuba">Cuba</input>
+					<input type="checkbox" ng-model="country3"value="Colombia">Colombia</input>
+					
+						
+				</p>
+
+	    		<p>
+					Seleccione un radio:  {{sexo }} 
+					<br>
+					<input type="radio"  ng-model="sexo" value="M">Masculino</input>
+					<input type="radio" ng-model="sexo" value="F">
+					Femenino</input>
+						
+				</p>
+	    	</p>	
+	    	</div>
+			<footer> 			
+    			<h1>{{ "Adios Mundo" }}</h1>
+    		</footer>
+
+
+    </body>
+</html>
