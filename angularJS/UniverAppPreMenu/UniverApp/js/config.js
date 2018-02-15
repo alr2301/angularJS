@@ -8,7 +8,8 @@ app.config( function($routeProvider){
 			templateUrl: 'parciales/profesores.html'
 		})
 		.when('/alumnos',{
-			templateUrl: 'parciales/alumnos.html'
+			templateUrl: 'parciales/alumnos.html',
+			controller : 'alumnosCTRL'
 		})
 		.otherwise({
 			redirectTo: '/'
